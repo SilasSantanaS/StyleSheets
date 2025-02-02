@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Portfolio</a>
+      <div class="menuToggle"></div>
+      <ul class="nav">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+    <section id="home">
+      <div class="content">
+        <h2>The Santana</h2>
+        <p>
+          Hey! I'm a Software Engineer with
+          <b>5 years of experience in .NET, Angular, Azure, and React Native</b
+          >. I specialize in building scalable applications, writing clean code,
+          and solving complex problems. Passionate about technology,
+          <b>I’m always eager to learn and improve.</b>
+        </p>
+        <a href="#" class="btn">Contact Me</a>
+      </div>
+      <img src="men.png" class="men" />
+    </section>
+    <section id="services">
+      <div class="secText">
+        <h2>Tech's I Am Great At</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          eveniet esse ullam nobis, suscipit harum laudantium voluptate laborum
+          aspernatur perferendis at officia reprehenderit facere cum!
+        </p>
+      </div>
+      <div class="content">
+        <div class="servicesBx">
+          <img src="./assets//images/NET core.png" alt="" />
+          <h3>.NET</h3>
+        </div>
+        <div class="servicesBx">
+          <img src="./assets//images/Angular.png" alt="" />
+          <h3>Angular</h3>
+        </div>
+        <div class="servicesBx">
+          <img src="./assets//images/React.png" alt="" />
+          <h3>React Native</h3>
+        </div>
+        <div class="servicesBx">
+          <img src="./assets//images/Azure.png" alt="" />
+          <h3>Azure</h3>
+        </div>
+      </div>
+      <div class="center">
+        <a href="#" class="btn">Hire Me</a>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="secText">
+        <h2>Languages I speak</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          eveniet esse ullam nobis, suscipit harum laudantium voluptate laborum
+          aspernatur perferendis at officia reprehenderit facere cum!
+        </p>
+      </div>
+      <div class="content">
+        <div class="imgBx">
+          <img src="./assets/images/brazil.png" alt="" />
+        </div>
+        <div class="imgBx">
+          <img src="./assets/images/united-states.png" alt="" />
+        </div>
+        <div class="imgBx">
+          <img src="./assets/images/mexico.png" alt="" />
+        </div>
+        <div class="imgBx">
+          <img src="./assets/images/egypt.png" alt="" />
+        </div>
+      </div>
+      <div class="center">
+        <a href="#" class="btn">View More</a>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="secText">
+        <h2>Ways To Contact Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          eveniet esse ullam nobis, suscipit harum laudantium voluptate laborum
+          aspernatur perferendis at officia reprehenderit facere cum!
+        </p>
+      </div>
+      <div class="content">
+        <a href="#">
+          <ion-icon name="mail-outline"></ion-icon> dummy@email.name
+        </a>
+        <a href="#"> <ion-icon name="logo-linkedin"></ion-icon> LinkedIn </a>
+
+        <a href="#"> <ion-icon name="logo-github"></ion-icon> GitHub </a>
+
+        <a href="#"> <ion-icon name="logo-whatsapp"></ion-icon> whatsapp </a>
+      </div>
+      <div class="center">
+        <p class="copyrights">
+          Copyright © 2025 <a href="#"></a> All Right Reserved.
+        </p>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      const list = document.querySelectorAll(".nav li");
+      function active() {
+        list.forEach((i) => i.classList.remove("active"));
+        this.classList.add("active");
+      }
+      list.forEach((i) => i.addEventListener("click", active));
+
+      let menuToggle = document.querySelector(".menuToggle");
+      let header = document.querySelector("header");
+      menuToggle.onclick = function () {
+        header.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
